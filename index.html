@@ -9,6 +9,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
 </head>
 
 <body>
@@ -185,6 +186,10 @@
             </div>
         </div>
     </section>
+
+    <footer id="footer">
+        <p>CopyrightAdminStrap, $copy; 2019</p>
+    </footer>
     <!--Modal content will not show-->
 
     <!--Add page-->
@@ -201,6 +206,7 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label>Page Body</label>
+                            <!--Text area name taken from CDN Editor example-->
                             <textarea name="editor1" class="form-control" placeholder="Page Body"></textarea>
                         </div>
                         <div class="checkbox">
@@ -225,6 +231,13 @@
             </div>
         </div>
     </div>
+
+
+
+    <!--Taken form CDN editor example-->
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
